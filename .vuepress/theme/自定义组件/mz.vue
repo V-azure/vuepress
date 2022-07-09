@@ -1,0 +1,93 @@
+<template>
+    <div class="all">
+        <div class="imglf"><img v-for="item in imglf" :src="item.url" v-show="item.id===imglf_num" alt=""></div>
+        <div id="result"></div>
+        <div v-show="isSt" @click="start" class="control">开始</div>
+        <div v-show="!isSt" @click="stop" class="control">停止</div>
+    </div>
+</template>
+
+<script>
+import $ from 'jquery'
+export default {
+    data() {
+        return {
+            names:['立春','雨水','惊蛰','春分'],
+            imglf:[
+                {
+                    id:0,
+                    url:('https://img-blog.csdnimg.cn/c10a524c01244cc9afec88c7eae255f5.png')
+                },
+                {
+                    id:1,
+                    url:('https://img-blog.csdnimg.cn/7d8afbef5f974afd882ca1650a526ab6.png')
+                },
+                {
+                    id:2,
+                    url:('https://img-blog.csdnimg.cn/12e9dcc008c54b32a379f3122f0b9d22.png')
+                },
+                {
+                    id:3,
+                    url:('https://img-blog.csdnimg.cn/b218992192ce48318fd16e3d0a06c8cf.png')
+                },
+            ],
+            imglf_num: 1,
+            isSt:true,
+            ds:null,
+        }
+    },
+    methods: {
+        start(){
+            // alert(this.names[10])
+            this.ds=setInterval(() => {
+                var index = Math.floor(Math.random() * this.names.length);
+                this.imglf_num = index;
+                var txt = this.names[index];
+                $('#result').css({
+					'color': '#9fc'
+				}).html(txt);
+            }, 50);
+            this.isSt=!this.isSt;
+        },
+        stop(){
+            this.isSt=!this.isSt;
+            clearInterval(this.ds);
+        }
+    },
+}
+</script>
+
+<style scoped>
+.all{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+#result{
+  font-size: 6.5em;
+  font-weight: bold;
+}
+.control{
+  width: 280px;
+  height: 130px;
+  border: 1px solid yellow;
+  text-align: center;
+  line-height:130px;
+  font-size: 4.2em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.imglf{
+    width: 220px;
+    height: 320px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+</style>
