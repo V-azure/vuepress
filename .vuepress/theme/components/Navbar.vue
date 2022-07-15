@@ -28,7 +28,7 @@
         :options="algolia"/>
       <SearchBox v-else-if="$themeConfig.search !== false && $frontmatter.search !== false"/>
       <NavLinks class="can-hide"/>
-      <Tmmini/>
+      <Tm/>
     </div>
   </header>
 </template>
@@ -44,7 +44,7 @@ import { useInstance } from '@theme/helpers/composable'
 import Tm from '../../theme/自定义组件/tm_mini.vue'
 
 export default defineComponent({
-  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode ,Tmmini },
+  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode ,Tm },
 
   setup (props, ctx) {
     const instance = useInstance()
