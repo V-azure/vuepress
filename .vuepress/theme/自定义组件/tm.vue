@@ -15,12 +15,14 @@
 import $ from "jquery";
 export default {
   data() {
-    return {};
+    return {
+      sit:null
+    };
   },
   methods: {},
   mounted() {
     
-    setInterval(() => {
+    this.sit = setInterval(() => {
       // 获取当前时间并保留第一位数字
       let date = new Date();
       let hour_s = parseInt(date.getHours() / 10);
@@ -515,6 +517,9 @@ export default {
       }
     }, 100);
   },
+  beforeDestroy(){
+    clearInterval(this.sit);
+  }
 };
 </script>
 
