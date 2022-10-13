@@ -101,17 +101,12 @@ export default defineComponent({
       return bgImageStyle ? { ...initBgImageStyle, ...bgImageStyle } : initBgImageStyle
     })
     
-    data(){
-      return{
-        sit:null
-      }
-    }
     
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true 
       //运行时间
-      this.sit = setInterval(() => {
+      var sit = setInterval(() => {
         var X = new Date("6/26/2022 00:00:00");
         var Y = new Date();
         var T = (Y.getTime() - X.getTime());
@@ -141,7 +136,7 @@ export default defineComponent({
     },
   },
   beforeDestroy(){
-    clearInterval(this.sit);
+    clearInterval(sit);
   }
 })
 </script>
