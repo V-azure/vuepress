@@ -526,7 +526,7 @@ export default {
 .tm {
   position: absolute;
   z-index: -1;
-  left: -60%;
+  left: calc(22% - 80px);
   top: -10%;
   width: 160px;
   height: 50px;
