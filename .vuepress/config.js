@@ -148,11 +148,11 @@ module.exports = {
         type: 'title',
         content: '🎉🎉🎉🎉🎉🎉🎉🎉🎉',
         style: 'text-aligin: center;'
-      },
-      {
-        type: 'image',
-        src: 'https://img-blog.csdnimg.cn/a4a0f0e0e77f4d6a996b3366f1f82b80.gif'
       }
+//       {
+//         type: 'image',
+//         src: 'https://img-blog.csdnimg.cn/a4a0f0e0e77f4d6a996b3366f1f82b80.gif'
+//       }
     ],
     // footer: [
     //   {
@@ -186,15 +186,15 @@ module.exports = {
       audios: [
         // // 本地文件示例
         {
-          name: '~Patricia~',
+          name: '~Moonlight~',
           artist: 'qunxing',
-          url: '/bgm/ys.mp3',
-          cover: 'http://qpic.y.qq.com/music_cover/wROHfo7vgYVrDx1tmMmKrbeZSKTwD2hnvFrVVlJ9xetNamCwkqQDiaA/300?n=1'
+          url: 'http://m10.music.126.net/20221013084040/dfb7406bd65e851755610a4ca14660d6/ymusic/5f16/ec1e/66dc/2efe3329502f3af516ddf581384ee764.mp3',
+          cover: 'https://p.qpic.cn/music_cover/vWuLw7pgtD9Rts157EocyOw4f97nHqtjibqmmDYhbu0FOU638Jb50mg/600?n=1'
         },
         {
-          name: 'of sno',
+          name: 'Starlight',
           artist: 'qunxing~~',
-          url: 'http://dl.stream.qqmusic.qq.com/C400001MUZTE2E956w.m4a?guid=6661921426&vkey=7C3ADA9C2DD03011E6666EB7820664B51B041CB9F1C66DEBA2384A672DB584CF5C503DB16B8977AFFCCE3FC5E1A4D18A8520B3B4F4A61AD0&uin=2265573522&fromtag=120032',
+          url: 'http://music.163.com/song/media/outer/url?id=470759406.mp3',
           cover: 'https://p.qpic.cn/music_cover/vWuLw7pgtD9Rts157EocyOw4f97nHqtjibqmmDYhbu0FOU638Jb50mg/600?n=1'
         },
         {
@@ -214,15 +214,7 @@ module.exports = {
           artist: 'qunxing~~~~',
           url: 'http://dl.stream.qqmusic.qq.com/C400004F4TWY4Mnxpy.m4a?guid=844919640&vkey=76022CEAB4BE440C25104687A68A0999AB97D58B92437402266678320DA4CCD5E65A23979280A882705B309BF8557117897D5DDDEBFBD83C&uin=2265573522&fromtag=120032',
           cover: 'https://qpic.y.qq.com/music_cover/ibbVbLpvGneuCTGllFTjO6QUxYU5T0ibjBcp2U2ZqxtO7SgH4xR0kNIA/300?n=1'
-        },
-        
-        // 网络文件示例
-        // {
-        //   name: '这一拜',
-        //   artist: '崔建国',
-        //   url: 'http://dl.stream.qqmusic.qq.com/C400003sVVsJ3XAIgJ.m4a?guid=5466890810&vkey=368B3CEBF12B513D6B1994379ABD99A10ABB1334553CD92507CB566B251DCC2ED5D27B9B557FCB8E0E1DD69A6B77C1153CAE6EBDF31B050A&uin=2265573522&fromtag=120032',
-        //   cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
-        // },
+        }
       ] 
     }
   ],
