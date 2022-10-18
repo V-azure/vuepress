@@ -123,7 +123,8 @@ data(){
         var c = (b - B) * 60;
         var C = Math.floor((b - B) * 60);
         var D = Math.floor((c - C) * 60);
-        runtime.innerHTML = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐"
+        var sitv = document.getElementById("runtime");
+        sitv.innerHTML = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐"
       }, 1000);
     })
 
@@ -144,6 +145,7 @@ data(){
     clearInterval(this.sit);
     this.sit=null;
     console.log(this.sit);
+    console.log(sitv);
   }
 })
 </script>
