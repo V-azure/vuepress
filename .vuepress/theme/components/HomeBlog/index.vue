@@ -143,9 +143,7 @@ data(){
   },
   beforeDestroy(){
     clearInterval(this.sit);
-    this.sit=null;
     console.log(this.sit);
-    console.log(sitv);
   }
 })
 </script>
