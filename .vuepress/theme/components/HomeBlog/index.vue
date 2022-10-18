@@ -158,7 +158,6 @@ export default defineComponent({
     onMounted(() => {
       state.heroHeight = document.querySelector(".hero").clientHeight;
       state.recoShow = true;
-      this.showrunt=true;
     });
 
     return {
@@ -179,6 +178,9 @@ export default defineComponent({
     getPagesByTags(tagInfo) {
       this.$router.push({ path: tagInfo.path });
     },
+  },
+  created(){
+    this.showrunt=true;
   },
   beforeDestroy(){
     this.showrunt=false;
