@@ -72,6 +72,11 @@ import { getOneColor } from '@theme/helpers/other'
 import { useInstance } from '@theme/helpers/composable'
 
 export default defineComponent({
+data(){
+        return{
+         sit:null,        
+      }
+    },
   components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
   setup (props, ctx) {
     const instance = useInstance()
@@ -106,7 +111,7 @@ export default defineComponent({
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true 
       //运行时间
-      var sit = setInterval(() => {
+      this.sit = setInterval(() => {
         var X = new Date("6/26/2022 00:00:00");
         var Y = new Date();
         var T = (Y.getTime() - X.getTime());
@@ -136,7 +141,7 @@ export default defineComponent({
     },
   },
   beforeDestroy(){
-    clearInterval(sit);
+    clearInterval(this.sit);
   }
 })
 </script>
