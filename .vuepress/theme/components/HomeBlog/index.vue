@@ -57,7 +57,6 @@
     </ModuleTransition>
     <div class="scroll-down"></div>
     <div class="runtime" id="runtime"></div>
-    {{ttt()}}
     <div class="sz"></div>
   </div>
 </template>
@@ -75,7 +74,7 @@ import { useInstance } from '@theme/helpers/composable'
 export default defineComponent({
 data(){
         return{
-         sit:null,        
+         sit:'',        
       }
     },
   components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
@@ -111,13 +110,6 @@ data(){
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true 
-    })
-
-    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
-  },
-
-  methods: {
-    ttt(){
       //运行时间
       this.sit = setInterval(() => {
         var X = new Date("6/26/2022 00:00:00");
@@ -134,7 +126,12 @@ data(){
         var sitv = document.getElementById("runtime");
         sitv.innerHTML = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐";
       }, 1000);
-    },
+    })
+
+    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
+  },
+
+  methods: {
     paginationChange (page) {
       setTimeout(() => {
         window.scrollTo(0, this.heroHeight)
