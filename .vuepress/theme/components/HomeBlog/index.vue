@@ -124,7 +124,14 @@ data(){
         var C = Math.floor((b - B) * 60);
         var D = Math.floor((c - C) * 60);
         var sitv = document.getElementById("runtime");
-        sitv.innerHTML = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐"
+        if(sitv){
+          console.log("存在");
+          var vvv = "sitv.innerHTML";
+          vvv = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐";
+        }else{
+          console.log("不存在");
+          vvv = null;
+        }
       }, 1000);
     })
 
