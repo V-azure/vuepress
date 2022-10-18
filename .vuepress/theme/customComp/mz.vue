@@ -1,6 +1,6 @@
 <template>
     <div class="all">
-        <div class="imglf"><img v-for="item in imglf" :src="item.url" v-show="item.id===imglf_num" alt=""></div>
+        <div class="imglf"><img v-for="item in imglf" :src="item.url" v-show="item.id===imglf_num" :key="item.id" alt=""></div>
         <div id="result"></div>
         <div v-show="isSt" @click="start" class="control">开始</div>
         <div v-show="!isSt" @click="stop" class="control">停止</div>

@@ -41,7 +41,7 @@ import SidebarButton from '@theme/components/SidebarButton'
 import NavLinks from '@theme/components/NavLinks'
 import Mode from '@theme/components/Mode'
 import { useInstance } from '@theme/helpers/composable'
-import Tm from '../../theme/自定义组件/tm_mini.vue'
+import Tm from '../../theme/customComp/tm_mini.vue'
 
 export default defineComponent({
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox, Mode ,Tm },
