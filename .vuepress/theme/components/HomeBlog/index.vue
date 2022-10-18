@@ -56,7 +56,7 @@
       <Content v-show="recoShowModule" class="home-center" custom/>
     </ModuleTransition>
     <div class="scroll-down"></div>
-    <div class="runtime" id="runtime"></div>
+    <div class="runtime" id="runtime" v-if="sit"></div>
     <div class="sz"></div>
   </div>
 </template>
