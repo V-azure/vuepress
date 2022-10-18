@@ -197,24 +197,24 @@ module.exports = {
           url: 'http://music.163.com/song/media/outer/url?id=470759406.mp3',
           cover: 'https://p.qpic.cn/music_cover/vWuLw7pgtD9Rts157EocyOw4f97nHqtjibqmmDYhbu0FOU638Jb50mg/600?n=1'
         },
-        {
-          name: '暮',
-          artist: 'qunxing~',
-          url: 'http://dl.stream.qqmusic.qq.com/C400001SuSA23ERqQt.m4a?guid=8854785500&vkey=AF0E5627C7AB5037D2A37F0AC7A2E737DE81F749AD04AB2A95D4C4C608B3266F88B510A7179E878FAA8339699267B79F04DFF9C8AF517DD5&uin=2265573522&fromtag=120032',
-          cover: 'https://qpic.y.qq.com/music_cover/T2OqbOVT5ryibRfDeIEwM4ynwSx8z0OBt04IEeOMcGtHoxAWzttJFqw/300?n=1'
-        },
-        {
-          name: 'の海',
-          artist: 'qunxing~~~',
-          url: 'http://dl.stream.qqmusic.qq.com/C400000w1Oiw3Jb75n.m4a?guid=6051912611&vkey=29DAA1706CC76081A60887C7ED82328C98BD89CD34FDD7C53611C90C932492D0E80005A82C54328CA8C70161C3C4E5CEE746E1C1DD3EA6A5&uin=2265573522&fromtag=120032',
-          cover: 'https://qpic.y.qq.com/music_cover/jPL7qibTISvFQrXUASOvnA66ntFTgMpZxHCt4bIoqsDysXQnZ2AsV2Q/300?n=1'
-        },
-        {
-          name: '-Elementary-',
-          artist: 'qunxing~~~~',
-          url: 'http://dl.stream.qqmusic.qq.com/C400004F4TWY4Mnxpy.m4a?guid=844919640&vkey=76022CEAB4BE440C25104687A68A0999AB97D58B92437402266678320DA4CCD5E65A23979280A882705B309BF8557117897D5DDDEBFBD83C&uin=2265573522&fromtag=120032',
-          cover: 'https://qpic.y.qq.com/music_cover/ibbVbLpvGneuCTGllFTjO6QUxYU5T0ibjBcp2U2ZqxtO7SgH4xR0kNIA/300?n=1'
-        }
+//         {
+//           name: '暮',
+//           artist: 'qunxing~',
+//           url: 'http://dl.stream.qqmusic.qq.com/C400001SuSA23ERqQt.m4a?guid=8854785500&vkey=AF0E5627C7AB5037D2A37F0AC7A2E737DE81F749AD04AB2A95D4C4C608B3266F88B510A7179E878FAA8339699267B79F04DFF9C8AF517DD5&uin=2265573522&fromtag=120032',
+//           cover: 'https://qpic.y.qq.com/music_cover/T2OqbOVT5ryibRfDeIEwM4ynwSx8z0OBt04IEeOMcGtHoxAWzttJFqw/300?n=1'
+//         },
+//         {
+//           name: 'の海',
+//           artist: 'qunxing~~~',
+//           url: 'http://dl.stream.qqmusic.qq.com/C400000w1Oiw3Jb75n.m4a?guid=6051912611&vkey=29DAA1706CC76081A60887C7ED82328C98BD89CD34FDD7C53611C90C932492D0E80005A82C54328CA8C70161C3C4E5CEE746E1C1DD3EA6A5&uin=2265573522&fromtag=120032',
+//           cover: 'https://qpic.y.qq.com/music_cover/jPL7qibTISvFQrXUASOvnA66ntFTgMpZxHCt4bIoqsDysXQnZ2AsV2Q/300?n=1'
+//         },
+//         {
+//           name: '-Elementary-',
+//           artist: 'qunxing~~~~',
+//           url: 'http://dl.stream.qqmusic.qq.com/C400004F4TWY4Mnxpy.m4a?guid=844919640&vkey=76022CEAB4BE440C25104687A68A0999AB97D58B92437402266678320DA4CCD5E65A23979280A882705B309BF8557117897D5DDDEBFBD83C&uin=2265573522&fromtag=120032',
+//           cover: 'https://qpic.y.qq.com/music_cover/ibbVbLpvGneuCTGllFTjO6QUxYU5T0ibjBcp2U2ZqxtO7SgH4xR0kNIA/300?n=1'
+//         }
       ] 
     }
   ],
