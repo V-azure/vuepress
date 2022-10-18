@@ -185,12 +185,12 @@ module.exports = {
       autoShrink: true,
       audios: [
         // // 本地文件示例
-        {
-          name: '~Moonlight~',
-          artist: 'qunxing',
-          url: 'http://m10.music.126.net/20221013084040/dfb7406bd65e851755610a4ca14660d6/ymusic/5f16/ec1e/66dc/2efe3329502f3af516ddf581384ee764.mp3',
-          cover: 'https://p.qpic.cn/music_cover/vWuLw7pgtD9Rts157EocyOw4f97nHqtjibqmmDYhbu0FOU638Jb50mg/600?n=1'
-        },
+//         {
+//           name: '~Moonlight~',
+//           artist: 'qunxing',
+//           url: 'http://m10.music.126.net/20221013084040/dfb7406bd65e851755610a4ca14660d6/ymusic/5f16/ec1e/66dc/2efe3329502f3af516ddf581384ee764.mp3',
+//           cover: 'https://p.qpic.cn/music_cover/vWuLw7pgtD9Rts157EocyOw4f97nHqtjibqmmDYhbu0FOU638Jb50mg/600?n=1'
+//         },
         {
           name: 'Starlight',
           artist: 'qunxing~~',
