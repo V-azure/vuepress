@@ -84,7 +84,7 @@
       <Content v-show="recoShowModule" class="home-center" custom />
     </ModuleTransition>
     <div class="scroll-down"></div>
-    <RunTime v-show="showrunt"></RunTime>
+    <RunTime />
     <div class="sz"></div>
   </div>
 </template>
@@ -158,6 +158,7 @@ export default defineComponent({
     onMounted(() => {
       state.heroHeight = document.querySelector(".hero").clientHeight;
       state.recoShow = true;
+      this.showrunt=true;
     });
 
     return {
