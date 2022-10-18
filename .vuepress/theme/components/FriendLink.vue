@@ -19,7 +19,8 @@
             :style="popupWindowStyle"
             ref="popupWindow">
             <div class="logo">
-              <img :src="getImgUrl(item)" />
+              <!-- <img :src="getImgUrl(item)" /> -->
+              <img src="https://img2.baidu.com/it/u=2833484760,1116678162&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1666198800&t=6ef1a3c6295aa3feccdcc0bc1161860a" />
             </div>
             <div class="info">
               <div class="title">
