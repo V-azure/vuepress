@@ -84,7 +84,7 @@
       <Content v-show="recoShowModule" class="home-center" custom />
     </ModuleTransition>
     <div class="scroll-down"></div>
-    <RunTime />
+    <RunTime v-show="showrunt"/>
     <div class="sz"></div>
   </div>
 </template>
