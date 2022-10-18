@@ -104,7 +104,7 @@ import { ModuleTransition, RecoIcon } from "@vuepress-reco/core/lib/components";
 import PersonalInfo from "@theme/components/PersonalInfo";
 import { getOneColor } from "@theme/helpers/other";
 import { useInstance } from "@theme/helpers/composable";
-import RunTime from "@theme/customComp/runtime"
+import RunTime from "../../customComp/runtime.vue"
 
 export default defineComponent({
   data() {
