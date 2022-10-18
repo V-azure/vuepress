@@ -126,7 +126,7 @@ data(){
         var sitv = document.getElementById("runtime");
         if(sitv){
           console.log("存在");
-          var vvv = "sitv.innerHTML";
+          var vvv = sitv.innerHTML;
           vvv = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐";
         }else{
           console.log("不存在");
