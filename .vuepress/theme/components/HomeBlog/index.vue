@@ -57,6 +57,7 @@
     </ModuleTransition>
     <div class="scroll-down"></div>
     <div class="runtime" id="runtime"></div>
+    {{ttt()}}
     <div class="sz"></div>
   </div>
 </template>
@@ -110,7 +111,6 @@ data(){
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true 
-      this.ttt();
     })
 
     return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
@@ -146,7 +146,6 @@ data(){
   },
   beforeDestroy(){
     clearInterval(this.sit);
-    this.ttt()=null;
     console.log(this.sit);
   }
 })
