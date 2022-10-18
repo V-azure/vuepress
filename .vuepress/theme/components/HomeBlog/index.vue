@@ -110,6 +110,14 @@ data(){
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true 
+      this.ttt();
+    })
+
+    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
+  },
+
+  methods: {
+    ttt(){
       //运行时间
       this.sit = setInterval(() => {
         var X = new Date("6/26/2022 00:00:00");
@@ -124,21 +132,9 @@ data(){
         var C = Math.floor((b - B) * 60);
         var D = Math.floor((c - C) * 60);
         var sitv = document.getElementById("runtime");
-        if(sitv){
-          console.log("存在");
-          var vvv = sitv.innerHTML;
-          vvv = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐";
-        }else{
-          console.log("不存在");
-          vvv = null;
-        }
+        sitv.innerHTML = "☀️本站已运行🌙: " + A + "天⭐" + B + "小时⭐" + C + "分⭐" + D + "秒⭐";
       }, 1000);
-    })
-
-    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
-  },
-
-  methods: {
+    },
     paginationChange (page) {
       setTimeout(() => {
         window.scrollTo(0, this.heroHeight)
@@ -150,6 +146,7 @@ data(){
   },
   beforeDestroy(){
     clearInterval(this.sit);
+    this.ttt()=null;
     console.log(this.sit);
   }
 })
