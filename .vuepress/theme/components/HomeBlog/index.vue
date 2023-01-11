@@ -1080,7 +1080,7 @@ span {
   54% {
     background-image: none;
   }
-  
+  }
   
   
   
@@ -1244,6 +1244,5 @@ span {
     background-color: #000;
     border-radius: 50px;
     z-index: -1;
-}
 }
 </style>
