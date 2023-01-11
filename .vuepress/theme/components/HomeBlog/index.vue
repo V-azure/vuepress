@@ -1092,6 +1092,9 @@ span {
     width: 100%;
     padding: 0 50px;
     margin-bottom: 250px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
 }
 .lantern-box {
     display: flex;
