@@ -1089,7 +1089,8 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100%!important;
+    max-width: 100%!important;
     padding: 0 50px;
     margin-bottom: 250px;
     position: fixed;
