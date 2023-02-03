@@ -1097,6 +1097,7 @@ span {
     top: -25px;
     z-index: 99;
     transform: scale(0.5);
+    margin: 0rem auto 0!important;
 }
 .lantern-box {
     display: flex;
