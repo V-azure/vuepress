@@ -1094,7 +1094,7 @@ span {
     padding: 0 50px;
     margin-bottom: 250px;
     position: fixed;
-    top: 0;
+    top: -25px;
     z-index: 99;
     transform: scale(0.5);
 }
